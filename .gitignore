@@ -1,0 +1,16 @@
+# Environments
+venv/
+env/
+.env
+
+# Data and Models (Too large for GitHub)
+data/*.json
+outputs/
+*.safetensors
+*.bin
+*.pt
+
+# Python caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
