@@ -1,0 +1,53 @@
+{
+  "DEBUG": true,
+  "LOGGING_CONSOLE": true,
+  "DJANGO_LOG_PATH": "authgateway.log",
+  "DJANGO_SENSITIVE_LOG_PATH": "authgateway_sensitive.log",
+  "DJANGO_HEARTBEAT_LOG_PATH": "authgateway_heartbeat.log",
+
+  "ALLOWED_HOSTS": [
+    "console-rs.adallom.com", ".console-rs.adallom.com",
+    "console-local.adallom.com", ".console-local.adallom.com",
+    "rs0euwglobscc1.blob.core.windows.net",
+    "127.0.0.1"],
+
+  "SERVER_HOSTNAME": "console-rs.adallom.com",
+  "MS_OAUTH_CLIENT_ID": "05a65629-4c1b-48c1-a78b-804c4abdd4af",
+  "MS_AUTHORITY_URL": "https://login.windows-ppe.net/",
+  "MS_OAUTH_AUTHORIZATION_URL" : "https://login.windows-ppe.net/common/oauth2/authorize",
+  "MS_OAUTH_LOGOUT_URL": "https://login.windows-ppe.net/common/oauth2/logout",
+  "MS_OAUTH_TOKEN_URL" : "https://login.windows-ppe.net/common/oauth2/token",
+  "MS_GRAPH_URL" : "https://graph.ppe.windows.net",
+  "MS_OAUTH_OIDC_CONFIGURATION_URL": "https://login.windows-ppe.net/common/.well-known/openid-configuration",
+
+  "MS_KEYVAULT_CLIENT_ID": "264af28e-cb8a-4383-8e4f-656817091952",
+  "MS_KEYVAULT_NAME": "adallom-certs-rs",
+  "MS_KEYVAULT_GLOBAL_CLIENT_ID": "759f9b54-e5fd-4d13-8401-9d8d57ab5b66",
+  "MS_KEYVAULT_GLOBAL_NAME": "adallom-certs-global-rs",
+  "MS_KEYVAULT_LOGIN": "https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47/oauth2/token",
+  "MS_KEYVAULT_TENANT_ID": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+  "MS_KEYVAULT_URL_TEMPLATE": "https://%s.vault.azure.net",
+  "MS_KEYVAULT_RESOURCE": "https://vault.azure.net",
+  "MS_KEYVAULT_REQUEST_TEMPLATE": "https://%s.vault.azure.net/%s/%s",
+  "MS_KEYVAULT_USE_MSI": false,
+  "MS_KEYVAULT_MSI_CLIENT_ID": null,
+  "CONSOLE_AZURE_NAMES": ["rs02euwconsole1"],
+
+  "MS_KEYVAULT_PEM_SECRET_NAME": "firstPartyCert",
+  "MS_KEYVAULT_FIRST_PARTY_CERT_NAME" : "FirstParty-Console-RS",
+
+  "CDN_URL_TEMPLATE": "{server_url}/{dev_suffix}",
+  "CONSOLE_NODES": ["eu2.console-rs.adallom.com:8888", "us.console-rs.adallom.com:8888"],
+  "CONSOLE_USER": "authgatewaymgmt",
+  "RESOLVE_TENANT_FROM_LOCAL_DB": true,
+
+  "HTTPS_REQUESTS_VERIFY": false,
+  "IS_AAD_LOGIN": true,
+  "ALLOW_DEV_LOGIN": true,
+
+
+
+
+  "DOMAIN_SUFFIX": "com",
+  "LOGGING_CLEAN_PIIS": true
+}
